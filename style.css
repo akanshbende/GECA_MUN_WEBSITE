@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.119);
+    backdrop-filter: blur(2px);
+    color:snow ;
+    box-shadow: 5px 10px 30px rgba(208, 204, 204, 0.13);
+    z-index:5;
+    font-family: 'Poppins',sans-serif;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin: 5px;
+    /* padding: 20px; */
+    /* flex-wrap: wrap; */
+}
+.menu li a{
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.676);
+    font-size: 1.2em;
+    padding: 15px;
+    transition: transform 500ms ease-in-out 25ms;
+    
+   
+    /* margin:15px; */
+}
+.menu li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    
+    /* line-height: 25px; */
+    /* /* padding: 10px; */
+    margin: 10px; 
+    /* font-size:0.9em; */
+    display:flex;
+    letter-spacing:1px;
+      text-decoration: none;
+    color: rgba(0, 0, 0, 0.676);
+    
+    
+}
+/* .menu li{
+    margin: 5px;
+} */
+/* .menue-space{
+width: 50%;
+border: 2px solid black;
+} */
+
+.menu li a:hover{
+    
+    box-shadow:  5px 5px 30px rgba(25, 25, 25, 0.452);
+    background-color: rgba(255, 255, 255, 0.053);
+    font-weight: 600;
+  
+  
+}
+/* .menu>li:hover,.menu>li>a:hover{
+    
+    
+    
+} */
+
+
+.logo{
+    margin-left: 10px;
+    padding: 5px;
+    float: left;
+    /* height: 50px;
+    width: 50px; */
+}
+
+.s1 {
+    background-image: url(iStock-468647510_cover.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-clip: border-box; */
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* position:fixed; */
+    background-attachment: fixed;
+    width:100vw;
+    font-family: 'Poppins';
+}
+/* .content{
+    
+    width: 800px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.064);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    padding-left: 20px;
+    padding-top: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.183);
+} */
+.geca{
+    font-size: 8em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    /* position:fixed; */
+    z-index: 5;
+    color: rgba(0, 0, 0, 0.628);
+    filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% /0.5)) ;
+}
+
+.moto1{
+    /* position: fixed; */
+    /* position:absolute; */
+  
+    font-size: 3em; 
+    letter-spacing: 3px;
+    z-index: 50;
+    color: rgb(255, 255, 255);
+    /* overflow:visible; */
+    filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% /0.6)) ;
+    
+}
+
+
+.s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-linear-gradient(90deg,rgba(2, 2, 81, 0.788),rgba(50, 50, 167, 0.861))
+    
+}
+.container2{
+    height: 95%;
+    width: 95%;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.553);
+    /* margin: 5px; */
+    border: 3px solid rgba(255, 255, 255, 0.683);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+.container2:hover{
+    transform: translateY(-15px) ;
+    transition: transform 500ms ease-in-out 25ms;
+    
+}
+
+.s3{
+    width: 100vw;
+    height: 100vh;
+   background: url(SANMUN01.jpg);
+   content: 'Content';
+   background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+     
+}
+.s4{
+    width: 100vw;
+    height: 100vh;
+    content: 'Content';
+    background: -webkit-linear-gradient(left, #380241, #f7042d);
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+   width: 100%;
+    padding: 15px;
+    display:flex;
+  
+    align-items: center;
+    justify-content:space-evenly;
+    color: antiquewhite;
+   
+    background-color: rgb(0, 0, 0);
+    font-family: 'Heebo', sans-serif;   
+}
+.gecamun{
+   
+    float: left;
+    text-align: left;
+    width:40%;
+}
+.f1{
+    padding: 0;
+    margin: 0;
+    /* float: right;
+    text-align: right; */
+    /* display:inline-block; */
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    list-style: none;
+    
+    /* gap: 50px; */
+    /* margin: 5px; */
+    font-size: large;
+    /* float: inline-end; */
+    
+}
+.f1 li{
+    display: inline-block;
+    padding: 10px;
+}
+.f1 li a{
+    list-style: none;
+    text-decoration: none;
+    color:whitesmoke ;
+    opacity: 0.5;
+}
+.f1 li a:hover{
+    opacity: 1;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:50px;
+    font-weight: 200;
+    /* -webkit-font-smoothing: antialiased; */
+}
+#copyright{
+    padding-left: 50px;
+    opacity: 0.5;
+    /* float: right; */
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+.icons {
+    display: flex;
+    column-gap: 25px;
+    padding-right: 100px;
+
+    
+    
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.icon--instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+    outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.icon--linkedin:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+.icon--facebook:hover {
+    background-color: #4267B2;
+    outline-color: #4267B2;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+
+
+
