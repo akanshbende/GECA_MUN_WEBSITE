@@ -37,17 +37,20 @@ nav {
     justify-content: center;
     margin-right: 5px;
     margin: 5px;
+    font-weight: 1000;
     /* padding: 20px; */
     /* flex-wrap: wrap; */
 }
 
 .menu li a {
+    
     text-decoration: none;
     list-style: none;
     color: rgba(0, 0, 0, 0.676);
     font-size: 1.2em;
     padding: 15px;
     transition: 0.3s;
+    align-self: center;
     /* transition: transform 500ms ease-in-out 25ms; */
 
 
@@ -55,6 +58,7 @@ nav {
 }
 
 .menu li {
+    text-align: center;
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -86,13 +90,6 @@ nav {
     /* font-weight: 600; */
     
 }
-
-/* .menu>li:hover,.menu>li>a:hover{
-    
-    
-    
-} */
-
 
 .logo {
     margin-left: 10px;
@@ -156,6 +153,9 @@ nav {
     color: rgba(0, 0, 0, 0.628);
     filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% /0.5));
 }
+
+
+
 
 .moto1 {
     /* position: fixed; */
@@ -227,10 +227,21 @@ nav {
     width: 100vw;
     height: 100vh;
     content: 'Content';
-    background: -webkit-linear-gradient(left, #380241, #f7042d);
+    background: -webkit-linear-gradient(90deg, #380241, #f7042d);
 
 }
 
+.s5 {
+    width: 100vw;
+    height: 100vh;
+    content: 'Content';
+    background: -webkit-linear-gradient(90deg ,rgb(0, 208, 255), rgb(255, 136, 0));
+    
+
+}
+/* .container5 img{
+    background-size: cover;
+} */
 
 
 
@@ -291,36 +302,42 @@ nav {
 .f1 {
     padding: 0;
     margin: 0;
-    /* width: 30%; */
-    /* float: right;
-    text-align: right; */
-    /* display:inline-block; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-
-    /* gap: 50px; */
-    /* margin: 5px; */
     font-size: large;
-    /* float: inline-end; */
+    
+   
 
 }
 
 .f1 li {
     display: inline-block;
     padding: 10px;
+    margin-left: 10px;
+   
+
 }
 
 .f1 li a {
     list-style: none;
     text-decoration: none;
     color: whitesmoke;
-    opacity: 0.5;
+    opacity: 0.7;
+    font-size: 1.3rem;
+    
+}
+.f1 li a i{
+    margin-right: 10px;
 }
 
 .f1 li a:hover {
     opacity: 1;
+}
+.gecamun span{
+    display: flex;
+    align-items: center;
 }
 
 h3 {
