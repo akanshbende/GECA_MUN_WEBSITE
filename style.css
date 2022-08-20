@@ -6,99 +6,104 @@
     box-sizing: border-box;
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     overflow-x: hidden;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    background-color: rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(3px);
+    height: 80px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.119);
-    backdrop-filter: blur(2px);
-    color: snow;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.196);
-    z-index: 5;
-    font-family: 'Poppins', sans-serif;
+    z-index: 20;
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
-    margin: 5px;
-    font-weight: 1000;
-    /* padding: 20px; */
-    /* flex-wrap: wrap; */
-}
-
-.menu li a {
-    
+nav ul li a {
     text-decoration: none;
     list-style: none;
-    color: rgba(0, 0, 0, 0.676);
-    font-size: 1.2em;
-    padding: 15px;
+    
     transition: 0.3s;
-    align-self: center;
-    /* transition: transform 500ms ease-in-out 25ms; */
-
-
-    /* margin:15px; */
 }
 
-.menu li {
-    text-align: center;
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+  
+
+}
+
+nav ul li {
     display: inline-block;
-    align-items: center;
-    justify-content: center;
-
-    /* line-height: 25px; */
-    /* /* padding: 10px; */
-    margin: 10px;
-    /* font-size:0.9em; */
-    display: flex;
+    line-height: 80px;
+    margin: 0 5px;
     letter-spacing: 1px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.95);
-    /* outline-offset: 4px;
-    outline-color: #000000; */
+}
+
+nav ul li a {
+    color: rgba(0, 0, 0, 0.676);
+    font-size: 1.5rem;
+    padding: 7px;
+    text-transform: uppercase;
 
 }
 
-.menu li a i {
-   margin-left: 10px;
-   display: inline-block;
-   margin-right: 10px;
+
+ul li a i {
+    margin-left: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.menu li a:hover {
+ul li a:hover {
 
-    box-shadow:  0px 5px 15px rgba(25, 25, 25, 0.452);
+    box-shadow: 0px 5px 15px rgba(25, 25, 25, 0.452);
     color: #fff;
-    background-color: rgb(0, 0, 52);
+    background-color: rgba(0, 0, 0, 0.676);
     /* font-weight: 600; */
-    
+
+}
+/*---------------------hamburger-----------------------*/
+.menu li a.active,
+.menu li a:hover {
+    background-color: rgb(0, 0, 52);
+    color: #fff;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+   
+    float: right;
+    line-height: 80px;
+    margin-right: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 .logo {
-    margin-left: 10px;
-    padding: 10px;
-    float: left;
-    /* height: 50px;
-    width: 50px; */
+    
+  margin: 10px;
+    left: 0em;
+    line-height: 60px;
+    align-self: center;
 }
-.logo img{
+
+.logo img {
+  margin: 5px;
     border-radius: 50%;
     outline: 2px solid rgb(0, 0, 0);
     transition-property:
@@ -106,11 +111,13 @@ nav {
         background-color;
     transition-duration: .25s;
 }
+
 .logo img:hover {
     outline-offset: 5px;
 }
+
 .logo img:hover {
-   
+
     outline-color: #000000;
 }
 
@@ -119,9 +126,7 @@ nav {
 #s1 {
     background-image: url(images/iStock-468647510_cover.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-clip: border-box; */
-    /* background-color: black; */
+    background-size: cover; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,20 +136,8 @@ nav {
     width: 100vw;
     font-family: 'Poppins';
 }
-
-/* .content{
-    
-    width: 800px;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.064);
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    padding-left: 20px;
-    padding-top: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.183);
-} */
 .geca {
-    font-size: 8em;
+    font-size: 8rem;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -153,35 +146,23 @@ nav {
     color: rgba(0, 0, 0, 0.628);
     filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% /0.5));
 }
-
-
-
-
 .moto1 {
-    /* position: fixed; */
-    /* position:absolute; */
-
     font-size: 3em;
     letter-spacing: 3px;
-    z-index: 50;
+    z-index: 10;
     color: rgb(255, 255, 255);
-    /* overflow:visible; */
     filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% /0.6));
-
 }
-
-
 #s2 {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 100vw;
     height: 100vh;
     background: -webkit-linear-gradient(90deg, rgba(2, 2, 81, 0.788), rgba(50, 50, 167, 0.861))
 }
 
-.container2 {  
+.container2 {
     height: 95%;
     width: 95%;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.553);
@@ -191,11 +172,11 @@ nav {
     background-color: rgba(0, 0, 0, 0.082);
 }
 
-.container2:hover {
+/* .container2:hover {
     transform: translateY(-15px);
     transition: transform 500ms ease-in-out 25ms;
 
-}
+} */
 
 #s3 {
     display: grid;
@@ -209,16 +190,18 @@ nav {
     background-attachment: fixed;
 
 }
-.container3{
-    
+
+.container3 {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0,0.375);
+    background-color: rgba(0, 0, 0, 0.375);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter:blur(3px) ;
+    backdrop-filter: blur(3px);
     width: 85%;
     height: 85%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -244,9 +227,10 @@ nav {
     background-position: center;
     background-size: cover;
 
-    
+
 
 }
+
 .container5 {
     width: 100%;
     height: 100%;
@@ -256,32 +240,33 @@ nav {
 }
 
 #s6 {
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
     content: 'Content';
-    
+
     /* background: -webkit-linear-gradient(90deg ,rgb(0, 208, 255), rgb(255, 136, 0)); */
     /* background: #c8e8e9; */
- 
 
-    
+
+
 
 }
+
 .container6 {
 
     width: 100%;
     height: 100%;
     /* margin-top: 4rem; */
     background-image: url(images/tyler-franta-iusJ25iYu1c-unsplash.jpg);
-    
-    
+
+
     background-position: center;
     background-size: cover;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,48 +305,37 @@ nav {
 /*>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<*/
 
 .footer {
-  
+
     width: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     display: flex;
-    /* flex-wrap: wrap; */
-
-
     align-items: center;
     justify-content: space-around;
     color: antiquewhite;
     background-color: rgb(0, 0, 0);
     font-family: 'Heebo', sans-serif;
     z-index: 500;
+    
 }
-/* .f{
-    flex: 1 1 768px;/*768px is a width at which wrapping is start
-} */
 
 .gecamun {
-
-    
     width: 30%;
 }
 
 .f1 {
-    padding: 0;
-    margin: 0;
+ 
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     font-size: large;
-    
-   
-
 }
 
 .f1 li {
     display: inline-block;
     padding: 10px;
     margin-left: 10px;
-   
+
 
 }
 
@@ -371,16 +345,18 @@ nav {
     color: whitesmoke;
     opacity: 0.7;
     font-size: 1.3rem;
-    
+
 }
-.f1 li a i{
+
+.f1 li a i {
     margin-right: 10px;
 }
 
 .f1 li a:hover {
     opacity: 1;
 }
-.gecamun span{
+
+.gecamun span {
     display: flex;
     align-items: center;
 }
@@ -490,15 +466,53 @@ h3 {
 
 
 
-/* @media (max-width:768px) {
-    .footer {
-       
-        display: block;
+@media (max-width:768px) {
+    nav{
+        background: rgba(0, 0, 0, 0.721);
+    }
+    nav ul li a {
+        font-size: 1rem;
         
     }
 
-    nav{
+    .checkbtn {
         display: block;
     }
-  
-} */
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height:40vh;
+        background: rgba(0, 0, 0, 0.721);
+        backdrop-filter: blur(20px);
+
+        top: 80px;
+        left: 0;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 2rem 0px;
+        line-height:2rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        color: #fff;
+      text-align: center;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: rgb(200, 181, 220);
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
