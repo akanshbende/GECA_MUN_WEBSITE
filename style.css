@@ -464,7 +464,56 @@ h3 {
 }
 
 
+@media (max-width:480px) {
+    nav{
+        background: rgba(0, 0, 0, 0.721);
+    }
+    nav ul li a {
+        font-size: 1rem;
+        
+    }
 
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height:40vh;
+        background: rgba(0, 0, 0, 0.721);
+        backdrop-filter: blur(20px);
+
+        top: 80px;
+        left: 0;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 2rem 0px;
+        line-height:2rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        color: #fff;
+      text-align: center;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: rgb(200, 181, 220);
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+}
 
 @media (max-width:768px) {
     nav{
